@@ -18,6 +18,7 @@ public class RawDataExample {
        Display display = new Display();
 
        Shell shell = new Shell(display);
+       shell.setSize(572, 85);
 
        RowLayout rl_shell = new RowLayout();
        shell.setLayout(rl_shell);
@@ -41,6 +42,9 @@ public class RawDataExample {
        button3.setLayoutData(new RowData(50, 20));
 
        shell.pack();
+       
+       Button btnNewButton = new Button(shell, SWT.NONE);
+       btnNewButton.setText("New Button");
 
        shell.open();
 
